@@ -1,0 +1,24 @@
+
+
+@use 'sass:math';
+$containerWidth: 1108;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1300: 1300 + px;
+$breakpoint1115: 1115 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint815: 855 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint480: 624.98 + px;
+
+$burgerBreakpoint: $breakpoint992;
+$burgerActiveColor: 'white';
+
+
+//colors
+$red: #BF0830;
+$gray: #484C63;
+$blue: #1A2578;
+$white: #fff;
+$dark: #3A3A3C;
+$darkBlue: #0D123C;

@@ -1,0 +1,141 @@
+@import 'vars';
+
+footer {
+    background-color: #0D123C;
+    color: white;
+    @media (max-width: $breakpoint992) {
+        font-size: 14px;
+    }
+
+}
+
+.footer_container {
+    max-width: 80%;
+    width: 100%;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    @media (max-width: $breakpoint480) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+.footer_label {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    @media (max-width: $breakpoint480) {
+        max-width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+
+    img {
+        @media (max-width: $breakpoint992) {
+            max-width: 100px;
+        }
+    }
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        /* or 169% */
+        color: white;
+    }
+}
+
+.footer_text {
+    display: flex;
+    align-items: stretch;
+    gap: 100px;
+    @media (max-width: $breakpoint992) {
+        gap: 40px;
+        font-size: 14px;
+    }
+    @media (max-width: $breakpoint480) {
+        justify-content: center;
+    }
+    // div {
+    //     margin-left: 100px;
+    // }
+}
+// .products {
+//     margin-left: 25%;
+// }
+// .about {
+//     margin-left: 25%;
+// }
+// .follow {
+//     margin-left: 25%;
+// }
+
+.products {
+    .products_title {
+        margin-bottom: 40px;
+        @media (max-width: $breakpoint992) {
+            margin-bottom: 20px;
+        }
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 20px;
+        @media (max-width: $breakpoint992) {
+            margin-bottom: 10px;
+        }
+    }
+    &.follow {
+        text-align: center;
+    }
+}
+
+
+.footer_logos {
+    display: flex;
+    margin-top:8vh;
+    gap: 15px;
+    margin-left: 0%;
+    @media (max-width: $breakpoint992) {
+        margin-top: 30px;
+    }
+    @media (max-width: $breakpoint480) {
+        flex-wrap: wrap;
+        max-width: 50px;
+        justify-content: center;
+    }
+}
+
+.hr5 {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(197, 203, 226, 0.5);
+}
+
+.rights {
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    @media (max-width: $breakpoint992) {
+        padding: 10px 10%;
+    }
+    @media (max-width: $breakpoint480) {
+        padding: 0px 10%;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}
